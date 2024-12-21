@@ -5,6 +5,7 @@ from dataclasses import dataclass
 
 import numpy as np
 import pandas as pd
+from sklearn.metrics import r2_score
 
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import StandardScaler,OneHotEncoder
@@ -81,10 +82,10 @@ class DataTransformation:
                 input_feature_train_arr, np.array(target_feature_train_df)
             ]
             test_arr=np.c_[
-                input_feature_test_df,np.array(target_feature_test_df)
+                input_feature_test_arr,np.array(target_feature_test_df)
             ]
 
-            logging.info(f"saved preprocessing object.")
+            logging.info("saved preprocessing object.")
 
             save_object(
                 file_path=self.data_transformation_config.preprocessor_obj_file_path,
