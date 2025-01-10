@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-pandas 
-flask
-numpy
-seaborn
-scikit-learn
-dill
-xgboost
-=======
 blinker==1.8.2
 click==8.1.7
 colorama==0.4.6
@@ -39,4 +30,3 @@ tzdata==2024.2
 Werkzeug==3.0.6
 xgboost==2.1.3
 zipp==3.20.2
->>>>>>> 52afd82 (done)
